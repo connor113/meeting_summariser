@@ -6,7 +6,8 @@ from pydub import AudioSegment
 from pydub.silence import split_on_silence
 
 
-def split_audio_into_chunks(audio_file_path, output_dir="chunks", min_silence_len=1000, silence_thresh=-40):
+def split_audio_into_chunks(audio_file_path, output_dir="chunks",
+                            min_silence_len=1000, silence_thresh=-40):
     """
     Splits an audio file into chunks based on silence intervals.
 
